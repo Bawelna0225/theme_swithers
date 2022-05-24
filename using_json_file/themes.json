@@ -1,0 +1,26 @@
+[
+	{
+		"id": "light",
+		"colors": {
+			"bgColor": "#ddd",
+			"secondary": "#aaa",
+			"text": "#333"
+		}
+	},
+	{
+		"id": "dark",
+		"colors": {
+			"bgColor": "#333",
+			"secondary": "#111",
+			"text": "#ddd"
+		}
+	},
+	{
+		"id": "blue",
+		"colors": {
+			"bgColor": "rgb(5, 2, 57)",
+			"secondary": "rgb(47, 23, 102)",
+			"text": "rgb(235, 235, 235)"
+		}
+	}
+]
