@@ -1,6 +1,6 @@
 const root = document.documentElement
 
-root.style.setProperty('--bg-color', localStorage.getItem('bgColor')) // setting css property
+root.style.setProperty('--bg-color', localStorage.getItem('bgColor'))
 root.style.setProperty('--secondary', localStorage.getItem('secondary'))
 root.style.setProperty('--text', localStorage.getItem('text'))
 
@@ -24,5 +24,5 @@ const changeTheme = (theme) => {
 				}
 			})
 		})
-		.catch((error) => console.error(`%cERROR! ${error}`, "color: red;"))
+		.catch((error) => console.log(`%cERROR! ${error}`, "color: red; font-size: 18px"))
 }

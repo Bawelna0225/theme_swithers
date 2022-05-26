@@ -1,7 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
 }
 :root {
 	--bg-color: #ddd;
@@ -9,51 +11,56 @@
 	--text: #333;
 }
 
-body{
-    background-color: var(--bg-color);
-    color: var(--text);
+body {
+	background-color: var(--bg-color);
+	color: var(--text);
 }
-h1{
-    margin-top: 20px;
-    margin-left: 10px;
+h1 {
+	margin-top: 20px;
+	margin-left: 10px;
 }
-.versions{
-    position: absolute;
-    right: 20px;
-    display: flex;
-    gap: 10px;
+.versions {
+	position: absolute;
+	right: 20px;
+	display: flex;
+	gap: 20px;
+	.version {
+		svg {
+			fill: var(--text);
+			path: var(--text);
+		}
+	}
 }
-.themes{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    position: absolute;
-    background-color: var(--secondary);
-    left: 150px;
-    top: 20px;
-    .theme{
-        width: 30px;
-        border-radius: 8px;
-        height: 30px;
-        cursor: pointer;
-        &:nth-child(1){
-            background-color: #ddd;
-        }
-         &:nth-child(2){
-            background-color: #333;
-        }
-         &:nth-child(3){
-            background-color: rgb(5, 2, 57);
-        }
-    }
+.themes {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 8px;
+	padding: 20px;
+	width: 200px;
+	background-color: var(--secondary);
+	margin-left: 1rem;
+	margin-top: 20px;
+	.theme {
+		width: 30px;
+		border-radius: 8px;
+		height: 30px;
+		cursor: pointer;
+		&:nth-child(1) {
+			background-color: #ddd;
+		}
+		&:nth-child(2) {
+			background-color: #333;
+		}
+		&:nth-child(3) {
+			background-color: rgb(5, 2, 57);
+		}
+	}
 }
-.container{
-    width: min(calc(100% - 2rem), 1200px);
-    margin-top: 120px;
-    margin-inline: auto;
-    background-color: var(--secondary);
-    padding: 20px;
+.container {
+	width: min(calc(100% - 2rem), 1200px);
+	margin-top: 80px;
+	margin-inline: auto;
+	background-color: var(--secondary);
+	padding: 20px;
 }

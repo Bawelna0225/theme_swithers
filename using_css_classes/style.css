@@ -1,24 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
 :root {
-  --bg-color: #ddd;
-  --secondary: #aaa;
+  --bg-color: #eee;
+  --secondary: #ccc;
   --text: #333;
 }
 
 .dark {
   --bg-color: #333;
-  --secondary: #111;
+  --secondary: #222;
   --text: #ddd;
 }
 
-.blue {
-  --bg-color: rgb(5, 2, 57);
-  --secondary: rgb(47, 23, 102);
+.red {
+  --bg-color: rgb(57, 2, 2);
+  --secondary: rgb(102, 23, 23);
   --text: rgb(235, 235, 235);
 }
 
@@ -29,14 +31,19 @@ body {
 
 h1 {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .versions {
   position: absolute;
   right: 20px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  z-index: 1;
+}
+.versions .version svg {
+  fill: var(--text);
+  path: var(--text);
 }
 
 .themes {
@@ -46,10 +53,9 @@ h1 {
   border-radius: 8px;
   padding: 20px;
   width: 200px;
-  position: absolute;
   background-color: var(--secondary);
-  left: 150px;
-  top: 20px;
+  margin-left: 1rem;
+  margin-top: 20px;
 }
 .themes .theme {
   width: 30px;
@@ -64,12 +70,12 @@ h1 {
   background-color: #333;
 }
 .themes .theme:nth-child(3) {
-  background-color: rgb(5, 2, 57);
+  background-color: rgb(57, 2, 2);
 }
 
 .container {
   width: min(100% - 2rem, 1200px);
-  margin-top: 120px;
+  margin-top: 80px;
   margin-inline: auto;
   background-color: var(--secondary);
   padding: 20px;
